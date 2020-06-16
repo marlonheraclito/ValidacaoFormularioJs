@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+</head>
+<body>
+	<h1>Formulário</h1>
+	<div>
+		<form name="formulario" method="POST" id="form">
+		<input type="text" id="id_nome" name="nome" placeholder="Nome"><br>
+		<input type="text" id="id_apelido" name="apelido" placeholder="Apelido"><br>
+		<input type="text" id="id_email" name="email" placeholder="Email"><br>
+		<input type="password" id="id_password" name="password" placeholder="********"><br>
+			
+			<label for="">Sexo</label><br>
+			<input type="radio" name="sexo" value="Homem">
+			<label for="">Homem</label><br>
+			<input type="radio" name="sexo" value="Mulher">
+			<label for="">Mulher</label><br>
+			<input type="radio" name="sexo" value="Outro">
+			<label for="">Outro</label><br><br>
+	
+		<label for="ilha">Escolha a ilha:</label><br>
+			<select name="ilha">
+				<option value="Sao Antao">Sao Antao</option>
+				<option value="Sao Vicente">Sao Vicente</option>
+				<option value="Sao Nincolau">Sao Nincolau</option>
+				<option value="Sal">Sal</option>
+				<option value="Boa Vista">Boa Vista</option>
+				<option value="Maio">Maio</option>
+				<option value="Santiago">Santiago</option>
+				<option value="Fogo">Fogo</option>
+				<option value="Brava">Brava</option>
+			</select><br><br>
+		
+		<input type="submit" id="btnEnviar" value="Enviar" onclick="return validarCampos()"/>
+		<input type="submit" id="btnCancelar" value="Cancelar">
+
+	</form>
+	<p id="resposta"></p>
+	</div>
+
+<script type="text/javascript" src="javascript/js.js"></script>
+</body>
+</html>
